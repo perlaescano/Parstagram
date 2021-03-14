@@ -71,7 +71,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="UsernameField" destination="cc4-EK-z92" id="ijg-nZ-orU"/>
                         <outlet property="passwordField" destination="vd2-v8-Ppg" id="NPb-ts-fYF"/>
                         <outlet property="usernameField" destination="cc4-EK-z92" id="qE8-uh-jB9"/>
                         <segue destination="cZ4-bq-vRT" kind="presentation" identifier="loginSegue" id="FEG-OW-3wR"/>

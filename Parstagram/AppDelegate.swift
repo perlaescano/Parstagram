@@ -7,30 +7,28 @@
 
 import UIKit
 import Parse
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        _ = ParseClientConfiguration {
-                    $0.applicationId = "S3GU0GtBUv1LZpRGTu6EmUSF4tB7CVmDm8HCtfPQ" // <- UPDATE
-                    $0.clientKey = "YG90nxybmlYMbGxY4kXgta47o8QpyPzqaP4ymsxG" // <- UPDATE
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "S3GU0GtBUv1LZpRGTu6EmUSF4tB7CVmDm8HCtfPQ"
+                    $0.clientKey = "YG90nxybmlYMbGxY4kXgta47o8QpyPzqaP4ymsxG"
                     $0.server = "https://parseapi.back4app.com"
             }
-        Parse.initialize(with: ParseClientConfiguration(block: {(configuration: ParseMutableClientConfiguration)-> Void in configuration.applicationId = "Parstagram"; configuration.server = "https://whispering-stream-51370.herokuapp.com/parse"})
-        )
+        Parse.initialize(with: parseConfig)
+        
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            _ = main.instantiateViewController(withIdentifier: "FseedNavigationController")
-            
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            window?.rootViewController  = feedNavigationController
         }
-            
-        
-        
-        
-        
+           
+    
         return true
     }
     

@@ -16,6 +16,7 @@
 		4B8AB1E525FB197D0069F2FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8AB1E325FB197D0069F2FA /* Main.storyboard */; };
 		4B8AB1E725FB19800069F2FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8AB1E625FB19800069F2FA /* Assets.xcassets */; };
 		4B8AB1EA25FB19800069F2FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8AB1E825FB19800069F2FA /* LaunchScreen.storyboard */; };
+		4BA3AF47260538E000BC1080 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3AF46260538E000BC1080 /* CommentCell.swift */; };
 		876B33B362004E4259684CE3 /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A548F59544E5F1569E2D23F /* Pods_Parstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		4B8AB1E625FB19800069F2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B8AB1E925FB19800069F2FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B8AB1EB25FB19800069F2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA3AF46260538E000BC1080 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		6B151751BBA2511DC1090F8B /* Pods-Parstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram.release.xcconfig"; path = "Target Support Files/Pods-Parstagram/Pods-Parstagram.release.xcconfig"; sourceTree = "<group>"; };
 		9B3F4D90FCE4EC5000236558 /* Pods-Parstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram.debug.xcconfig"; path = "Target Support Files/Pods-Parstagram/Pods-Parstagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				4B8AB1DD25FB197D0069F2FA /* AppDelegate.swift */,
 				4B8AB1DF25FB197D0069F2FA /* SceneDelegate.swift */,
 				4B8AB1E325FB197D0069F2FA /* Main.storyboard */,
+				4BA3AF46260538E000BC1080 /* CommentCell.swift */,
 				4B61E98E25FC7065000C58C6 /* CameraViewController.swift */,
 				4B7236CD25FDC5B300D6E149 /* PostCell.swift */,
 				4B61E98B25FC5299000C58C6 /* FeedViewController.swift */,
@@ -220,6 +223,7 @@
 				4B61E98C25FC5299000C58C6 /* FeedViewController.swift in Sources */,
 				4B8AB1E025FB197D0069F2FA /* SceneDelegate.swift in Sources */,
 				4B7236CE25FDC5B400D6E149 /* PostCell.swift in Sources */,
+				4BA3AF47260538E000BC1080 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
